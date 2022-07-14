@@ -9,23 +9,23 @@ const TodoSchema = new Schema({
     content: {
         type: "String",
         required: false,
-        
+
     },
     isComplete: {
         type: "String",
         default: false,
         required: false
     }
-}, 
-{
-    timestamps: { 
-        createdAt: 'created_at' 
-    }
+},
+    {
+        timestamps: {
+            createdAt: 'created_at'
+        }
 
-});
+    });
 
-// This creates our model from the above schema, using mongoose's model method
+// Esto crea nuestro model del Schema de arriba usando el metodo modelo de Mongoose
 let Todo = mongoose.model("Todo", TodoSchema);
 
-// Export the User model
+// Exporta el model User
 module.exports = Todo; 

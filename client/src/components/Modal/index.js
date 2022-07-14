@@ -1,6 +1,6 @@
 import React from "react";
 
-// Requiring boostrap elements from react boostrap to make model
+// Requeriendo los elementos de Bootstrap en React Bootstrap para hacer el modelo
 import MainModal from "react-bootstrap/Modal";
 import ModalHeader from "react-bootstrap/ModalHeader";
 import ModalFooter from "react-bootstrap/ModalFooter";

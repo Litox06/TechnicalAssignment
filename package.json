@@ -1,25 +1,32 @@
 {
-  "name": "technicalassignment",
+  "name": "todo",
   "version": "1.0.0",
-  "description": "Todo app in react",
+  "description": "todo app",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "testapp",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Litox06/TechnicalAssignment.git"
+    "url": "git+https://github.com/claudiojsaillant/LoginRegister.git"
   },
+  "keywords": [
+    "login"
+  ],
   "author": "Leonardo Pezo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Litox06/TechnicalAssignment/issues"
+    "url": "https://github.com/Litox06"
   },
-  "homepage": "https://github.com/Litox06/TechnicalAssignment#readme",
+  "homepage": "https://github.com/Litox06",
   "dependencies": {
-    "express": "^4.18.1",
-    "mongoose": "^6.4.4",
-    "path": "^0.12.7"
+    "concurrently": "^7.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.2.6"
   }
 }

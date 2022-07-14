@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 export function Todo(props) {
-  // Render a todo this functional component needs: onClick - for updating the todo, onClickDelete - for deleting the todo and props.text for the todo text.
-  // props.id so it can be used later in onClickDelete
+  // Renderiza un To-do, este componente funcional necesita: onClick - para actualizar el To-do, onClickDelete - para eliminar el To-do y el props.text para el texto del To-do
+  // props.id para que sea usado en un futuro en onClickDelete
   return (
     <div className='row' style={{margin: "20px"}}>
         

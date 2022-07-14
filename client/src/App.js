@@ -1,5 +1,3 @@
-
-// import './App.css';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -13,8 +11,8 @@ class App extends Component {
 
 render () {
   return (
-    // Set router with a switch with routes
-    // (Just route / for component : Main)
+    // Settear router con un switch que tiene routes
+    // Solo existe la ruta / para el componente : Main
       <Router>
         <Switch>
           <Route exact path="/" component={Main} />
