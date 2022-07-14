@@ -8,7 +8,7 @@ export function Input(props) {
     <div className='row' style={{margin: "20px"}}>
         <div className="input-group">
             <div className="input-group-prepend">
-                <span className="input-group-text">Todo: </span>
+                <span className="input-group-text">To-do: </span>
             </div>
             
             <textarea className="form-control"  name={props.name} value={props.value} onChange={props.onChange}></textarea>
